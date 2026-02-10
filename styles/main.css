@@ -1,7 +1,19 @@
 /*переменные*/
 :root {
-    
+    --main-font: "Gilroy", sans-serif;
+    --accent-font: "Tavolga", sans-serif;
+
+    --main-text-color: #331907;
+    --light-text-color: #ffffff;
+
+    --ui-elements-color: #770b1d;
+    --ui-light-elements-color: #eba8b1;
+
+    --bg-dark-color: #eba8b1;
+    --bg-light-color: #ffefef;
+    --bg-footer-color: #c0707c;
 }
+
 /* .. переменные*/
 
 /*общие настройки*/
@@ -12,6 +24,16 @@
 }
 
 body {
+    font-family: var(--main-font);
+    font-size: 15px;
+    font-weight: 400;
 
+    color:var(--main-text-color);
 }
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 /* .. общие настройки*/

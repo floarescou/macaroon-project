@@ -1,3 +1,77 @@
+/*Tavolga font*/
 @font-face {
-    
+    font-family: 'Tavolga';
+    src:
+            local('Tavolga-Free'),
+            url('../fonts/Tavolga-Free.woff2') format('woff2'),
+            url('../fonts/Tavolga-Free.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
+/* .. Tavolga font*/
+
+/*Gilroy fonts*/
+/* --- regular*/
+@font-face {
+    font-family: 'Gilroy';
+    src:
+            local('Gilroy-Regular'),
+            url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+            url('../fonts/Gilroy-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+/* .. --- regular*/
+
+/* --- medium*/
+@font-face {
+    font-family: 'Gilroy';
+    src:
+            local('Gilroy-Medium'),
+            url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+            url('../fonts/Gilroy-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+/* .. --- medium*/
+/* --- bold*/
+@font-face {
+    font-family: 'Gilroy';
+    src:
+            local('Gilroy-Bold'),
+            url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+            url('../fonts/Gilroy-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+/* .. --- bold*/
+/* --- extrabold*/
+@font-face {
+    font-family: 'Gilroy';
+    src:
+            local('Gilroy-ExtraBold'),
+            url('../fonts/Gilroy-ExtraBold.woff2') format('woff2'),
+            url('../fonts/Gilroy-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+/* .. --- extrabold*/
+
+/* .. Gilroy fonts*/
+
+
+
+
+
+
+
+
+
+
+
+
