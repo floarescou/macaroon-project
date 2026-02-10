@@ -26,6 +26,7 @@
 }
 
 body {
+    position: relative;
     font-family: var(--main-font);
     font-size: 15px;
     font-weight: 400;
@@ -108,6 +109,7 @@ ul.block__list {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 ul li.block__item {
     max-width: 263px;
 }
@@ -199,6 +201,10 @@ ul.nav__list li.nav__item a:hover:after {
 }
 
 /*основной контент секции хедер*/
+header {
+    overflow: hidden;
+}
+
 header .header-content {
     font-family: var(--accent-font);
     margin-top: 126px;
@@ -207,6 +213,8 @@ header .header-content {
 
 header .header-content__offer {
     max-width: 585px;
+    position: relative;
+    z-index: 5;
 }
 
 header .header-content__title {
@@ -227,6 +235,73 @@ header .header-content__btn {
     height: 60px;
 }
 
+.header-content__image {
+    position: relative;
+}
+
+.header-content__image img {
+    position: relative;
+    z-index: 5;
+}
+
+.header-content__decor_big, .header-content__decor_small {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--ui-elements-color);
+    border-radius: 50%;
+
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.header-content__decor_small {
+    width: 290px;
+    height: 290px;
+    animation-name: scaleSmall;
+}
+
+.header-content__decor_big {
+    width: 420px;
+    height: 420px;
+    opacity: 0;
+    animation-delay: 1s;
+    animation-name: scaleBig;
+}
+
+@keyframes scaleSmall {
+    0% {
+        width: 290px;
+        height: 290px;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        width: 520px;
+        height: 520px;
+        opacity: 0;
+    }
+}
+
+@keyframes scaleBig {
+    0% {
+        width: 490px;
+        height: 490px;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        width: 690px;
+        height: 690px;
+        opacity: 0;
+    }
+}
+
 /* .. основной контент секции хедер*/
 /* .. <!--шапка сайта-->*/
 /* .. === <!--первый экран--> ===*/
@@ -235,6 +310,7 @@ header .header-content__btn {
 .about .about-content__offer {
     max-width: 475px;
 }
+
 .about .about-content {
     align-items: flex-end;
     justify-content: space-between;
@@ -275,11 +351,13 @@ ul li .about-block__title {
     font-weight: 800;
     margin-bottom: 19px;
 }
+
 ul li .about-block__desc {
     width: 220px;
     font-weight: 500;
     line-height: 1.333;
 }
+
 /* .. === <!--секция "о нас"--> ===*/
 
 /* === <!--секция "пироженки"--> ===*/
@@ -288,6 +366,7 @@ h2.products__title {
     text-align: center;
     margin-bottom: 87px;
 }
+
 ul li.products-block__item {
     width: 263px;
     border: 2px solid var(--light-text-color);
@@ -298,9 +377,10 @@ ul li.products-block__item {
     color: var(--light-text-color);
 }
 
-ul li.products-block__item:hover  .products-block__image img {
+ul li.products-block__item:hover .products-block__image img {
     transform: scale(1.1);
 }
+
 ul li .products-block__image {
     width: 192px;
     height: 124px;
@@ -309,6 +389,7 @@ ul li .products-block__image {
     transform: translateX(-50%);
     top: -30%;
 }
+
 ul li .products-block__image img {
     position: absolute;
     bottom: 0;
@@ -323,7 +404,180 @@ ul li .products-block__title {
     line-height: 1;
     margin-bottom: 26px;
 }
+
 /* .. === <!--секция "пироженки"--> ===*/
+
+/* .. === <!--секция "оформить заказ"--> ===*/
+section.order {
+    padding: 98px 0 120px 0;
+}
+
+.order .order-content {
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 150px;
+}
+
+.order .order-content__image {
+    margin-top: 75px;
+}
+
+.order .order-content__offer {
+    max-width: 410px;
+}
+
+.order .order-content__title {
+    margin-bottom: 41px;
+}
+
+.order .order-content__desc {
+    margin-bottom: 48px;
+}
+
+/*форма заказа*/
+form .order-form__choice {
+    margin-bottom: 40px;
+}
+
+form .order-form__label {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: rgb(18, 10, 6);
+    font-weight: 700;
+}
+
+form input, form .order-form__btn {
+    width: 294px;
+    height: 60px;
+}
+
+form input {
+    border: 1px solid var(--ui-elements-color);
+    border-radius: 30px;
+    margin-bottom: 15px;
+    padding: 20px 25px;
+    color: var(--ui-elements-color);
+    font-weight: 700;
+    font-size: 17px;
+}
+
+form input::placeholder {
+    color: var(--ui-elements-color);
+    font-size: 15px;
+}
+
+.top-input {
+    margin-bottom: 0;
+}
+
+.order .order-decor__big {
+    position: absolute;
+    top: 70px;
+    left: -45px;
+}
+
+.order .order-decor__small {
+    position: absolute;
+    bottom: 75px;
+    right: 160px;
+}
+
+/* .. форма заказа*/
+/* .. === <!--секция "оформить заказ"--> ===*/
+
+/* === <!--подвал сайта / футер-- ===*/
+footer.footer {
+    padding: 80px 0 77px 0;
+}
+
+footer .footer__credits {
+    margin-top: 10px;
+}
+
+footer .footer__rights {
+    margin-top: 15px;
+    font-size: 12px;
+    color: var(--ui-light-elements-color);
+    text-align: left;
+    line-height: 1;
+}
+
+footer a.footer__soc1al {
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: var(--light-text-color);
+    font-weight: 700;
+    opacity: 0.8;
+    transition: var(--hover-transition);
+}
+
+footer a.footer__soc1al:hover {
+    opacity: 1;
+}
+
+/* .. === <!--подвал сайта / футер-- ===*/
+
+/* === <!--всплывающий гифтбокс / акция--> === */
+.giftbox {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.giftbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 9px;
+}
+
+.giftbox__bubble {
+    display: none;
+    position: relative;
+    transition: var(--hover-transition);
+}
+
+.giftbox__text {
+    position: absolute;
+    width: 152px;
+    top: 13px;
+    left: 17px;
+    font-weight: 500;
+    color: var(--ui-elements-color);
+    line-height: 1.333;
+}
+
+.giftbox__btn {
+    position: relative;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    background: radial-gradient(circle at center, #71081e 0, #d7485c 100%);
+
+    transition: var(--hover-transition);
+}
+
+.giftbox__btn img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.giftbox__btn:hover {
+    box-shadow: 0px 0px 12.6px 2.4px rgba(130, 19, 40, 0.5);
+}
+
+.giftbox:hover .giftbox__bubble {
+    display: block;
+}
+
+/* .. === <!--всплывающий гифтбокс / акция--> === */
 
 
 

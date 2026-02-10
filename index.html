@@ -57,7 +57,9 @@
             </div>
             <!-- .. текстовая часть-->
             <!--картинка-->
-            <div class="main-content__image">
+            <div class="main-content__image header-content__image">
+                <div class="header-content__decor_small"></div>
+                <div class="header-content__decor_big"></div>
                 <img src="img/main_bg.png" alt="пачка макарунс" class="main-content__img">
             </div>
             <!-- .. картинка-->
@@ -92,25 +94,29 @@
             <li class="block__item">
                 <div class="block__digit">1</div>
                 <h3 class="block__title about-block__title">Лучшие продукты</h3>
-                <p class="block__desc about-block__desc">Мы честно готовим макаруны только из натуральных и качественных продуктов. Мы не
+                <p class="block__desc about-block__desc">Мы честно готовим макаруны только из натуральных и качественных
+                    продуктов. Мы не
                     используем консерванты, ароматизаторы и красители.</p>
             </li>
             <li class="block__item">
                 <div class="block__digit">2</div>
                 <h3 class="block__title about-block__title">Много вкусов</h3>
-                <p class="block__desc about-block__desc">Наша задача – предоставить вам широкое разнобразие вкусов. Вы удивитесь, но у нас
+                <p class="block__desc about-block__desc">Наша задача – предоставить вам широкое разнобразие вкусов. Вы
+                    удивитесь, но у нас
                     более 70 вкусов пироженок.</p>
             </li>
             <li class="block__item">
                 <div class="block__digit">3</div>
                 <h3 class="block__title about-block__title">Бисквитное тесто</h3>
-                <p class="block__desc about-block__desc">Все пирожные готовятся на бисквитном тесте с качественным сливочным маслом 82,5%.
+                <p class="block__desc about-block__desc">Все пирожные готовятся на бисквитном тесте с качественным
+                    сливочным маслом 82,5%.
                     В составе нет маргарина и дрожжей!</p>
             </li>
             <li class="block__item">
                 <div class="block__digit">4</div>
                 <h3 class="block__title about-block__title">Честный продукт</h3>
-                <p class="block__desc about-block__desc">Вкус, качество и безопасность наших пирогов подтверждена декларацией о
+                <p class="block__desc about-block__desc">Вкус, качество и безопасность наших пирогов подтверждена
+                    декларацией о
                     соответствии, которую мы получили 22.06.2016 г.</p>
             </li>
         </ul>
@@ -183,29 +189,47 @@
 <!--секция "оформить заказ"-->
 <section class="order">
     <div class="container">
-        <div class="main-content">
+        <div class="main-content order-content">
+            <div class="order-decor__big">
+                <img src="img/decor/strawberry_big.png" alt="Декор">
+            </div>
             <!--картинка-->
-            <div class="main-content__image">
-                <img src="#" alt="#" class="main-content__img">
+            <div class="main-content__image order-content__image">
+                <img src="img/order_bg.png" alt="Стопка макарунс" class="main-content__img">
             </div>
             <!-- .. картинка-->
             <!--текстовая часть-->
-            <div class="main-content__offer">
-                <h2 class="main-content__title"></h2>
-                <p class="main-content__desc"></p>
-                <form action="#" class="order-form" method="post">
-                    <label for="choice">
-                        <input type="text">
-                    </label>
+            <div class="main-content__offer order-content__offer">
+                <h2 class="main-content__title order-content__title">Закажите макарун!</h2>
+                <p class="main-content__desc order-content__desc">
+                    Выберите понравившийся макарун, заполните форму и ожидайте звонка нашего
+                    пекаря!
+                </p>
 
-                    <label for="data">
-                        <input type="text">
-                        <input type="tel">
-                        <button class="btn order-form__btn" type="submit"></button>
-                    </label>
+                <form action="#" class="order-form" method="post">
+                    <div class="order-form__choice">
+                        <p class="order-form__label">Ваш выбор</p>
+                        <label for="product">
+                            <input class="top-input" type="text" name="product" id="product" placeholder="Напишите, что хотите заказать..." required autocomplete="off">
+                        </label>
+                    </div>
+
+                    <div class="order-form__data">
+                        <p class="order-form__label">Заполните данные для заказа</p>
+                        <label for="name">
+                            <input type="text" name="name" id="name" placeholder="Ваше имя" required autocomplete="off">
+                        </label>
+                        <label for="phone">
+                            <input type="tel" name="phone" id="phone" placeholder="+7 (___) ___ - __ - __" required autocomplete="off">
+                        </label>
+                    </div>
+                    <button class="btn order-form__btn" type="submit">Оформить заказ</button>
                 </form>
             </div>
             <!-- .. текстовая часть-->
+            <div class="order-decor__small">
+                <img src="img/decor/strawberry_small.png" alt="Декор">
+            </div>
         </div>
     </div>
 </section>
@@ -219,8 +243,14 @@
                 <div class="logo">
                     <img class="logo__img" src="img/logo.png" alt="Macaroons">
                 </div>
+                <p class="footer__rights">Все права защищены, 2026</p>
             </div>
-            <div class="footer__soc1al"></div>
+            <a href="#" class="footer__soc1al">
+                <span class="footer__icon-img">
+                    <img src="img/icons/insta_icon.png" alt="Instagram">
+                </span>
+                <span>Мы в Instagram</span>
+            </a>
             <div class="phone footer__phone">
                 <a class="phone__link" href="tel:1234567890">+7 (329) 368-98-68</a>
             </div>
@@ -228,6 +258,20 @@
     </div>
 </footer>
 <!-- .. подвал сайта / футер-->
+
+<!--всплывающий гифтбокс / акция-->
+<div class="giftbox">
+        <div class="giftbox__bubble">
+            <img src="img/decor/giftbox_bubble.png" alt="акция">
+            <p class="giftbox__text">
+                Оформите заказ и получите подарок!
+            </p>
+        </div>
+        <div class="giftbox__btn">
+            <img src="img/decor/giftbox.png" alt="акция">
+        </div>
+</div>
+<!-- .. всплывающий гифтбокс / акция-->
 
 <!--основной файл скриптов-->
 <script src="scripts/script.js"></script>
