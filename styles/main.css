@@ -12,6 +12,8 @@
     --bg-dark-color: #eba8b1;
     --bg-light-color: #ffefef;
     --bg-footer-color: #c0707c;
+
+    --hover-transition: all 0.3s ease;
 }
 
 /* .. переменные*/
@@ -28,12 +30,172 @@ body {
     font-size: 15px;
     font-weight: 400;
 
-    color:var(--main-text-color);
+    color: var(--main-text-color);
 }
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .container {
     max-width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
 }
 
+.btn {
+    font-size: 18px;
+    font-family: var(--main-font);
+    color: var(--light-text-color);
+    font-weight: 700;
+    line-height: 1;
+    border-radius: 30px;
+    padding: 20px 25px;
+
+    transition: var(--hover-transition);
+
+    background-image: -moz-linear-gradient( 90deg, rgb(113,8,30) 0%, rgb(215,72,92) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(113,8,30) 0%, rgb(215,72,92) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(113,8,30) 0%, rgb(215,72,92) 100%);
+
+    -moz-transform: matrix( 1.00011967125209,0,0,1.00072983989549,0,0);
+    -webkit-transform: matrix( 1.00011967125209,0,0,1.00072983989549,0,0);
+    -ms-transform: matrix( 1.00011967125209,0,0,1.00072983989549,0,0);
+}
+
+.btn:hover {
+    box-shadow: 0px 5px 9px 1px rgba(130, 19, 40, 0.5);
+}
+
+/*цвета фона экранов*/
+header.header, section.products {
+    background-color: var(--bg-dark-color);
+}
+
+section.about, section.order {
+    background-color: var(--bg-light-color);
+}
+
+/*блок контента в секции*/
+.main-content {
+    display: flex;
+    justify-content: center;
+}
+
+.main-content__title {
+
+}
+
+/*.. блок контента в секции*/
+
+footer.footer {
+    background-color: var(--bg-footer-color);
+}
+
+/* .. цвета фона экранов*/
+
 /* .. общие настройки*/
+
+/* === <!--первый экран--> === */
+header.header {
+    padding-bottom: 108px;
+    color: var(--light-text-color);
+}
+
+/*<!--шапка сайта-->*/
+header .topline {
+    padding: 36px 0 30px 0;
+}
+
+/*навигация по сайту*/
+nav.nav {
+    margin-right: 328px;
+    margin-top: -2px;
+}
+
+ul.nav__list {
+    column-gap: 40px;
+}
+
+ul.nav__list li.nav__item a {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ui-elements-color);
+}
+
+ul.nav__list li.nav__item a:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0%;
+    margin-top: 1px;
+    background-color: var(--ui-elements-color);
+
+    transition: var(--hover-transition);
+}
+
+ul.nav__list li.nav__item a:hover {
+    text-shadow: 0.5px 0 0.5px var(--ui-elements-color);
+}
+
+ul.nav__list li.nav__item a:hover:after {
+    width: 100%;
+}
+
+/* .. навигация по сайту*/
+
+.phone .phone__link {
+    font-size: 16px;
+    color: var(--light-text-color);
+    font-weight: 700;
+
+    transition: var(--hover-transition);
+}
+
+.phone .phone__link:hover {
+    text-shadow: 0.5px 0 0.5px var(--light-text-color);
+}
+
+/*основной контент секции хедер*/
+header .header-content {
+    font-family: var(--accent-font);
+    margin-top: 126px;
+    align-items: flex-start;
+}
+
+header .header-content__offer {
+    max-width: 585px;
+}
+
+header .header-content__title {
+    font-size: 55px;
+    line-height: 1.091;
+    margin-bottom: 60px;
+}
+
+header .header-content__desc {
+    max-width: 350px;
+    font-size: 18px;
+    line-height: 1.389;
+    margin-bottom: 80px;
+}
+header .header-content__btn {
+    width: 240px;
+    height: 60px;
+}
+
+/* .. основной контент секции хедер*/
+
+
+/* .. <!--шапка сайта-->*/
+/* .. === <!--первый экран--> ===*/
+
+
+
+
+
+
+
+

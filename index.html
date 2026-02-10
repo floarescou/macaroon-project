@@ -22,21 +22,43 @@
 <header class="header">
     <div class="container">
         <!--шапка сайта-->
-        <div class="topline"></div>
+        <div class="topline flex">
+            <div class="logo">
+                <img class="logo__img" src="img/logo.png" alt="Macaroons">
+            </div>
+            <nav class="nav">
+                <ul class="nav__list flex">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Пироженки</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">О нас</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Оформить заказ</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="phone">
+                <a class="phone__link" href="tel:1234567890">+7 (329) 368-98-68</a>
+            </div>
+        </div>
         <!-- .. шапка сайта-->
 
         <!--контент первого экрана-->
-        <div class="main-content">
+        <div class="main-content header-content">
             <!--текстовая часть-->
-            <div class="main-content__offer">
-                <h1 class="main-content__title"></h1>
-                <p class="main-content__desc"></p>
-                <button class="btn main-content__btn"></button>
+            <div class="main-content__offer header-content__offer">
+                <h1 class="main-content__title header-content__title">Мягкие французские пироженки Macaroons</h1>
+                <p class="main-content__desc header-content__desc">
+                    Побалуйте себя и своих близких самыми вкусными и ароматными домашними пироженками Macaroon!
+                </p>
+                <button class="btn main-content__btn header-content__btn">Выбрать макарун</button>
             </div>
             <!-- .. текстовая часть-->
             <!--картинка-->
             <div class="main-content__image">
-                <img src="#" alt="#" class="main-content__img">
+                <img src="img/main_bg.png" alt="пачка макарунс" class="main-content__img">
             </div>
             <!-- .. картинка-->
         </div>
@@ -105,6 +127,45 @@
                     <button class="btn block__btn"></button>
                 </div>
             </li>
+            <li class="block__item">
+                <div class="block__image">
+                    <img src="#" alt="#" class="block__img">
+                </div>
+                <h3 class="block__title"></h3>
+                <div class="block__order">
+                    <div class="block__info">
+                        <p class="quantity"></p>
+                        <p class="price"></p>
+                    </div>
+                    <button class="btn block__btn"></button>
+                </div>
+            </li>
+            <li class="block__item">
+                <div class="block__image">
+                    <img src="#" alt="#" class="block__img">
+                </div>
+                <h3 class="block__title"></h3>
+                <div class="block__order">
+                    <div class="block__info">
+                        <p class="quantity"></p>
+                        <p class="price"></p>
+                    </div>
+                    <button class="btn block__btn"></button>
+                </div>
+            </li>
+            <li class="block__item">
+                <div class="block__image">
+                    <img src="#" alt="#" class="block__img">
+                </div>
+                <h3 class="block__title"></h3>
+                <div class="block__order">
+                    <div class="block__info">
+                        <p class="quantity"></p>
+                        <p class="price"></p>
+                    </div>
+                    <button class="btn block__btn"></button>
+                </div>
+            </li>
         </ul>
     </div>
 </section>
@@ -144,10 +205,16 @@
 <!--подвал сайта / футер-->
 <footer class="footer">
     <div class="container">
-        <div class="footer-wrapper">
-            <div class="footer__credits"></div>
+        <div class="footer-wrapper flex">
+            <div class="footer__credits">
+                <div class="logo">
+                    <img class="logo__img" src="img/logo.png" alt="Macaroons">
+                </div>
+            </div>
             <div class="footer__soc1al"></div>
-            <div class="footer__phone"></div>
+            <div class="phone footer__phone">
+                <a class="phone__link" href="tel:1234567890">+7 (329) 368-98-68</a>
+            </div>
         </div>
     </div>
 </footer>
