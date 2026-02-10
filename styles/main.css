@@ -80,7 +80,7 @@ section.about, section.order {
 
 /*.. цвета фона экранов*/
 
-section.about {
+section.about, section.products {
     padding: 120px 0;
 }
 
@@ -106,9 +106,31 @@ ul.block__list {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 ul li.block__item {
     max-width: 263px;
+}
+
+ul li .block__order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul li .block__info {
+    text-align: left;
+}
+
+ul li p.quantity {
+    margin-bottom: 16px;
+}
+
+ul li .block__btn {
+    width: 130px;
+    height: 50px;
+    font-size: 16px;
+    padding: 17px;
 }
 
 footer.footer {
@@ -260,7 +282,48 @@ ul li .about-block__desc {
 }
 /* .. === <!--секция "о нас"--> ===*/
 
+/* === <!--секция "пироженки"--> ===*/
+h2.products__title {
+    color: var(--light-text-color);
+    text-align: center;
+    margin-bottom: 87px;
+}
+ul li.products-block__item {
+    width: 263px;
+    border: 2px solid var(--light-text-color);
+    border-radius: 20px;
+    padding: 109px 20px 27px 20px;
+    position: relative;
+    text-align: center;
+    color: var(--light-text-color);
+}
 
+ul li.products-block__item:hover  .products-block__image img {
+    transform: scale(1.1);
+}
+ul li .products-block__image {
+    width: 192px;
+    height: 124px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30%;
+}
+ul li .products-block__image img {
+    position: absolute;
+    bottom: 0;
+    left: 4px;
+    transition: var(--hover-transition);
+}
+
+ul li .products-block__title {
+    font-size: 18px;
+    font-family: var(--accent-font);
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 26px;
+}
+/* .. === <!--секция "пироженки"--> ===*/
 
 
 
