@@ -56,13 +56,13 @@ body {
 
     transition: var(--hover-transition);
 
-    background-image: -moz-linear-gradient( 90deg, rgb(113,8,30) 0%, rgb(215,72,92) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(113,8,30) 0%, rgb(215,72,92) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(113,8,30) 0%, rgb(215,72,92) 100%);
+    background-image: -moz-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
 
-    -moz-transform: matrix( 1.00011967125209,0,0,1.00072983989549,0,0);
-    -webkit-transform: matrix( 1.00011967125209,0,0,1.00072983989549,0,0);
-    -ms-transform: matrix( 1.00011967125209,0,0,1.00072983989549,0,0);
+    -moz-transform: matrix(1.00011967125209, 0, 0, 1.00072983989549, 0, 0);
+    -webkit-transform: matrix(1.00011967125209, 0, 0, 1.00072983989549, 0, 0);
+    -ms-transform: matrix(1.00011967125209, 0, 0, 1.00072983989549, 0, 0);
 }
 
 .btn:hover {
@@ -78,6 +78,12 @@ section.about, section.order {
     background-color: var(--bg-light-color);
 }
 
+/*.. цвета фона экранов*/
+
+section.about {
+    padding: 120px 0;
+}
+
 /*блок контента в секции*/
 .main-content {
     display: flex;
@@ -85,16 +91,29 @@ section.about, section.order {
 }
 
 .main-content__title {
+    font-size: 45px;
+    font-family: var(--accent-font);
+}
 
+.main-content__desc {
+    font-size: 18px;
+    line-height: 1.556;
 }
 
 /*.. блок контента в секции*/
 
+ul.block__list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+ul li.block__item {
+    max-width: 263px;
+}
+
 footer.footer {
     background-color: var(--bg-footer-color);
 }
-
-/* .. цвета фона экранов*/
 
 /* .. общие настройки*/
 
@@ -111,8 +130,7 @@ header .topline {
 
 /*навигация по сайту*/
 nav.nav {
-    margin-right: 328px;
-    margin-top: -2px;
+    margin-right: 220px;
 }
 
 ul.nav__list {
@@ -181,16 +199,71 @@ header .header-content__desc {
     line-height: 1.389;
     margin-bottom: 80px;
 }
+
 header .header-content__btn {
     width: 240px;
     height: 60px;
 }
 
 /* .. основной контент секции хедер*/
-
-
 /* .. <!--шапка сайта-->*/
 /* .. === <!--первый экран--> ===*/
+
+/* === <!--секция "о нас"--> ===*/
+.about .about-content__offer {
+    max-width: 475px;
+}
+.about .about-content {
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 88px;
+}
+
+.about .about-content__title {
+    line-height: 1.222;
+    margin-bottom: 60px;
+}
+
+.about .about-content__desc {
+    max-width: 400px;
+}
+
+ul li .block__digit {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--ui-elements-color);
+    font-size: 60px;
+    font-weight: 800;
+    color: var(--light-text-color);
+    text-align: center;
+    line-height: 99px;
+    margin-bottom: 14px;
+
+    transition: var(--hover-transition);
+}
+
+ul li .block__digit:hover {
+    background-color: var(--ui-light-elements-color);
+    color: var(--ui-elements-color);
+}
+
+ul li .about-block__title {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 19px;
+}
+ul li .about-block__desc {
+    width: 220px;
+    font-weight: 500;
+    line-height: 1.333;
+}
+/* .. === <!--секция "о нас"--> ===*/
+
+
+
+
+
 
 
 
