@@ -15,7 +15,6 @@
 
     --hover-transition: all 0.3s ease;
 }
-
 /* .. переменные*/
 
 /*общие настройки*/
@@ -295,38 +294,6 @@ header .header-content__btn {
     }
 }
 
-/*@keyframes scaleSmall {*/
-/*    0% {*/
-/*        width: 290px;*/
-/*        height: 290px;*/
-/*        opacity: 0;*/
-/*    }*/
-/*    50% {*/
-/*        opacity: 1;*/
-/*    }*/
-/*    100% {*/
-/*        width: 520px;*/
-/*        height: 520px;*/
-/*        opacity: 0;*/
-/*    }*/
-/*}*/
-
-/*@keyframes scaleBig {*/
-/*    0% {*/
-/*        width: 490px;*/
-/*        height: 490px;*/
-/*        opacity: 0;*/
-/*    }*/
-/*    50% {*/
-/*        opacity: 1;*/
-/*    }*/
-/*    100% {*/
-/*        width: 690px;*/
-/*        height: 690px;*/
-/*        opacity: 0;*/
-/*    }*/
-/*}*/
-
 /* .. основной контент секции хедер*/
 /* .. <!--шапка сайта-->*/
 /* .. === <!--первый экран--> ===*/
@@ -369,6 +336,10 @@ ul li .block__digit {
 ul li .block__digit:hover {
     background-color: var(--ui-light-elements-color);
     color: var(--ui-elements-color);
+}
+
+.about .about-block__list {
+    column-gap: 20px;
 }
 
 ul li .about-block__title {
