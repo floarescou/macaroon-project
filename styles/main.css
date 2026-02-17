@@ -29,7 +29,6 @@ body {
     font-family: var(--main-font);
     font-size: 15px;
     font-weight: 400;
-
     color: var(--main-text-color);
 }
 
@@ -240,9 +239,6 @@ header .header-content__btn {
 
 .header-content__decor_big, .header-content__decor_small {
     position: absolute;
-    /*top: 50%;*/
-    /*left: 50%;*/
-    /*transform: translate(-50%, -50%);*/
     border: 1px solid var(--ui-elements-color);
     border-radius: 50%;
 }
@@ -544,6 +540,10 @@ footer a.footer__soc1al {
 footer a.footer__soc1al:hover {
     opacity: 1;
 }
+
+.footer__hidden-block {
+    display: none;
+}
 /* .. === <!--подвал сайта / футер-- ===*/
 
 /* === <!--всплывающий гифтбокс / акция--> === */
@@ -621,83 +621,19 @@ footer a.footer__soc1al:hover {
         top: 90px;
     }
 }
-
-
-/*.giftbox {*/
-/*    justify-content: center;*/
-/*    column-gap: 9px;*/
-/*}*/
-
-/*.giftbox__bubble {*/
-/*    position: relative;*/
-/*    transition: var(--hover-transition);*/
-
-/*    animation-name: bubble-disappear;*/
-/*    animation-duration: 0.5s;*/
-/*    animation-timing-function: linear;*/
-/*}*/
-
-/*.giftbox__text {*/
-/*    position: absolute;*/
-/*    width: 152px;*/
-/*    top: 13px;*/
-/*    left: 17px;*/
-/*    font-weight: 500;*/
-/*    color: var(--ui-elements-color);*/
-/*    line-height: 1.333;*/
-/*}*/
-/*.giftbox__btn {*/
-/*    position: relative;*/
-/*    border-radius: 50%;*/
-/*    width: 90px;*/
-/*    height: 90px;*/
-/*    background: radial-gradient(circle at center, #71081e 0, #d7485c 100%);*/
-
-/*    transition: var(--hover-transition);*/
-/*}*/
-/*.giftbox__btn img {*/
-/*    position: absolute;*/
-/*    top: 50%;*/
-/*    left: 50%;*/
-/*    transform: translate(-50%, -50%);*/
-/*}*/
-/*.giftbox__btn:hover {*/
-/*    box-shadow: 0px 0px 12.6px 2.4px rgba(130, 19, 40, 0.5);*/
-/*}*/
-
-/*.giftbox:hover .giftbox__bubble {*/
-/*    display: block;*/
-/*    animation-name: bubble-appear;*/
-/*    animation-duration: 0.5s;*/
-/*    animation-timing-function: linear;*/
-/*}*/
-
-/*@keyframes bubble-appear {*/
-/*    0% {*/
-/*        opacity: 0;*/
-/*        top: 90px;*/
-/*    }*/
-
-/*    100% {*/
-/*        opacity: 1;*/
-/*        top: calc(50% - 32px);*/
-/*    }*/
-/*}*/
-
-/*@keyframes bubble-disappear {*/
-/*    0% {*/
-/*        display: block;*/
-/*        opacity: 1;*/
-/*        top: calc(50% - 32px);*/
-/*    }*/
-
-/*    100% {*/
-/*        opacity: 0;*/
-/*        top: 90px;*/
-/*    }*/
-/*}*/
-
 /* .. === <!--всплывающий гифтбокс / акция--> === */
+
+/* === <!--бургер меню--> ===*/
+
+.burger-menu__icon {
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 32px;
+}
+
+
+/* .. === <!--бургер меню--> ===*/
 
 
 
